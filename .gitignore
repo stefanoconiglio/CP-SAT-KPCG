@@ -1,0 +1,12 @@
+.local/
+.venv/
+__pycache__/
+build/
+*.zip
+C1/
+C3/
+C10/
+R3/
+R10/
+sparse_corr/
+sparse_rand/
