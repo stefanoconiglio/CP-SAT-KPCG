@@ -5,6 +5,12 @@ script (`CP-SAT.py`) and a ported C++ code (`CP-SAT.cpp`).
 
 ## Requirements
 
+### Python
+
+- Python 3
+
+### C++
+
 - Linux
 - CMake, g++, make, git
 - C++17 (required by OR-Tools)
