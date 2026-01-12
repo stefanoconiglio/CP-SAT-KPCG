@@ -1,6 +1,7 @@
 # CP-SAT (C++ Port)
 
 Solve knapsack instances with conflicts using OR-Tools CP-SAT.
+Includes a Python reference script (`CP-SAT.py`) and the C++ port (`CP-SAT.cpp`).
 
 ## Requirements
 
@@ -63,3 +64,8 @@ prefix before building:
 export ORTOOLS_ROOT=/path/to/or-tools
 make build
 ```
+
+## Python script
+
+The original Python version is available at `CP-SAT.py`. It can download data,
+set up a local venv for OR-Tools, and solve the instances.
