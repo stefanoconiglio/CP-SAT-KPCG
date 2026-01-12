@@ -7,7 +7,7 @@ script (`CP-SAT.py`) and a ported C++ code (`CP-SAT.cpp`).
 
 ### Python
 
-- Python 3
+- Python 3.8+ (compatible with OR-Tools Python)
 
 ### C++
 
