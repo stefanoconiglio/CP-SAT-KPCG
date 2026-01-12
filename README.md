@@ -1,7 +1,8 @@
-# CP-SAT (C++ Port)
+# CP-SAT (Python + C++)
 
 Solve knapsack instances with conflicts using OR-Tools CP-SAT.
-Includes a Python reference script (`CP-SAT.py`) and the C++ port (`CP-SAT.cpp`).
+This repo includes both a Python version (`CP-SAT.py`) and a C++ version
+(`CP-SAT.cpp`).
 
 ## Requirements
 
@@ -15,7 +16,24 @@ Install build tools on Ubuntu:
 sudo apt-get install -y git cmake g++ make curl unzip
 ```
 
-## Build OR-Tools locally (recommended)
+## Python (quick start)
+
+The Python script can download the instances, install OR-Tools into a local
+venv, and run the solver.
+
+```sh
+python3 CP-SAT.py
+```
+
+Skip downloads and/or the venv install if you already have them:
+
+```sh
+python3 CP-SAT.py --no-download --no-install
+```
+
+## C++ build (Linux)
+
+### Build OR-Tools locally (recommended)
 
 This repo includes a script that downloads and builds OR-Tools into
 `./.local/or-tools`.
@@ -30,20 +48,20 @@ You can pin a version:
 ORTOOLS_GIT_REF=v9.9 make ortools
 ```
 
-## Build the solver
+### Build the solver
 
 ```sh
 make build
 ```
 
-## Download instances
+### Download instances
 
 ```sh
 make download
 make unzip
 ```
 
-## Run
+### Run
 
 ```sh
 make run
@@ -55,7 +73,7 @@ To skip downloads when you already have the data:
 ./build/CP-SAT --no-download
 ```
 
-## Using a system OR-Tools install
+### Using a system OR-Tools install
 
 If you already have OR-Tools installed, set `ORTOOLS_ROOT` to the install
 prefix before building:
@@ -64,8 +82,3 @@ prefix before building:
 export ORTOOLS_ROOT=/path/to/or-tools
 make build
 ```
-
-## Python script
-
-The original Python version is available at `CP-SAT.py`. It can download data,
-set up a local venv for OR-Tools, and solve the instances.
