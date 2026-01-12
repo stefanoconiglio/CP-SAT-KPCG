@@ -1,8 +1,7 @@
-# CP-SAT (Python + C++)
+# CP-SAT
 
-Solve knapsack instances with conflicts using OR-Tools CP-SAT.
-This repo includes both a Python version (`CP-SAT.py`) and a C++ version
-(`CP-SAT.cpp`).
+Solve knapsack instances with conflicts using OR-Tools CP-SAT. Includes a Python
+script (`CP-SAT.py`) and a ported C++ code (`CP-SAT.cpp`).
 
 ## Requirements
 
